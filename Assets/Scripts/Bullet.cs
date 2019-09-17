@@ -27,9 +27,17 @@ public abstract class Bullet : MonoBehaviour
         protected set { this.position = value; }
     }
 
-    public virtual void Init(float damage, Vector2 speed, Vector2 position) { }
+    public virtual void Init(float damage, Vector2 speed, Vector2 position)
+    {
+        Damage = damage;
+        Speed = speed;
+        Position = position;
+        transform.position = Position;
+    }
 
-    public virtual void UpdatePosition() { }
+    public virtual void UpdatePosition()
+    {
+    }
 
     public void Update()
     {
