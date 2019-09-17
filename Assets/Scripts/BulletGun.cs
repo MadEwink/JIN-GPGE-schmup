@@ -33,14 +33,18 @@ public class BulletGun : MonoBehaviour
         timer = 0f;
     }
 
-    // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
+    }
+    
+    public void Fire()
+    {
         if ( timer >= CoolDown )
         {
             var new_projectile = Instantiate(projectile, transform.position, transform.rotation);
-            new_projectile.Init(Damage, Speed, transform.position);
+            new_projectile.
+                Init(Damage, Speed, transform.position);
             timer = 0f;
         }
     }
