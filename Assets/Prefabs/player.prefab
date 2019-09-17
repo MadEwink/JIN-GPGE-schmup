@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6544287205625975023}
   - component: {fileID: 5949564944244779506}
   - component: {fileID: 7168630926477937691}
+  - component: {fileID: -8286549594012770022}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -144,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3bbe033a7d5244ebc809b76d8a7c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 0
+  maxSpeed: 10
 --- !u!114 &5949564944244779506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,3 +172,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 104f346354b6241449c40c20afddb6d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-8286549594012770022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7519030990520867413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e56fb375f438f346906d64be4573387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: -6411165830895579097, guid: 4e43ba457d6dc23468aa6a826b449871,
+    type: 3}
+  damage: 42
+  speed: {x: 15, y: 0}
+  coolDown: 0.1
