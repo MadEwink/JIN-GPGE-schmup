@@ -4,8 +4,11 @@ using UnityEngine;
 
 public abstract class Bullet : MonoBehaviour
 {
+    [SerializeField]
     private float damage;
+    [SerializeField]
     private Vector2 speed;
+    [SerializeField]
     private Vector2 position;
     
     public float Damage
@@ -13,19 +16,25 @@ public abstract class Bullet : MonoBehaviour
         get { return this.damage; }
         set { this.damage = value; }
     }
-    public float Speed
+    public Vector2 Speed
     {
-        get { return this.speed }
+        get { return this.speed; }
         set { this.speed = value; }
     }
-    public float Position
+    public Vector2 Position
     {
-        get { return this.position }
-        private set { this.position = value; }
+        get { return this.position; }
+        protected set { this.position = value; }
     }
 
-    public virtual void Init(float damage, Vector2 speed, Vector2 position);
-    public virtual void UpdatePosition();
+    public virtual void Init(float damage, Vector2 speed, Vector2 position) { }
+
+    public virtual void UpdatePosition() { }
+
+    public void Update()
+    {
+        UpdatePosition();
+    }
 
     private void OnBecameInvisible()
     {

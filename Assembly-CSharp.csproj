@@ -57,10 +57,12 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AIEnemyBasicEngine.cs" />
      <Compile Include="Assets\Scripts\BaseAvatar.cs" />
+     <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\EnemyAvatar.cs" />
      <Compile Include="Assets\Scripts\Engines.cs" />
      <Compile Include="Assets\Scripts\InputController.cs" />
      <Compile Include="Assets\Scripts\PlayerAvatar.cs" />
+     <Compile Include="Assets\Scripts\SimpleBullet.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Mad/Documents/Travail/JIN/Unity/Schmup/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
