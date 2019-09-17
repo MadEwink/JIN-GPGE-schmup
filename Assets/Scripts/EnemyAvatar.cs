@@ -4,4 +4,8 @@ using UnityEngine;
 
 public class EnemyAvatar : BaseAvatar
 {
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
 }

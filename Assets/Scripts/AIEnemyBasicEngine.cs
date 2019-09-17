@@ -17,9 +17,4 @@ public class AIEnemyBasicEngine : MonoBehaviour
     void Update()
     {
     }
-
-    private void OnBecameInvisible()
-    {
-        Destroy(gameObject);
-    }
 }
