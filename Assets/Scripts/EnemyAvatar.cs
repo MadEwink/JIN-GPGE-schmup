@@ -8,4 +8,9 @@ public class EnemyAvatar : BaseAvatar
     {
         Destroy(gameObject);
     }
+
+	public override void Die()
+	{ 
+		Destroy(gameObject);
+	}
 }
