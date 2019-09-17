@@ -49,4 +49,11 @@ public abstract class Bullet : MonoBehaviour
         Destroy(gameObject);
     }
 
+    private void OnTriggerEnter2D(Collider2D collider2D)
+    {
+        var target = collider2D.GetComponent<BaseAvatar>();
+        if (target)
+            target.TakeDamage(Damage);
+    }
+
 }
