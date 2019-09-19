@@ -4,12 +4,20 @@ using UnityEngine;
 
 public abstract class Bullet : MonoBehaviour
 {
+    protected enum Type
+    {
+        PlayerBullet,
+        EnemyBullet
+    };
+    
     [SerializeField]
     private float damage;
     [SerializeField]
     private Vector2 speed;
     [SerializeField]
     private Vector2 position;
+    [SerializeField]
+    protected Type type;
     
     public float Damage
     {

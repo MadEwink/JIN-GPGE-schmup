@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3933403194461451644}
   - component: {fileID: 7531031182375602018}
   - component: {fileID: 6590374565694350847}
+  - component: {fileID: -3892040355989182335}
   m_Layer: 0
   m_Name: poulpi
   m_TagString: Untagged
@@ -172,3 +173,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97fd13b61b4cd34baba7144d204abd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-3892040355989182335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2855465084296683083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f00d215565d9db744b5c23cf16b975bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 7770357772620737946, guid: 8853af0fa8a2e0e4484b51cb37871a67,
+    type: 3}
+  damage: 0
+  speed: {x: -5, y: 0}
+  coolDown: 3

@@ -5,8 +5,8 @@ using UnityEngine;
 public class BulletGun : MonoBehaviour
 {
     [SerializeField]
-    private SimpleBullet projectile;
-    private float timer;
+    private Bullet projectile;
+    protected float timer;
     [SerializeField]
     private float damage;
     [SerializeField]
@@ -42,9 +42,8 @@ public class BulletGun : MonoBehaviour
     {
         if ( timer >= CoolDown )
         {
-            var new_projectile = Instantiate(projectile, transform.position, transform.rotation);
-            new_projectile.
-                Init(Damage, Speed, transform.position);
+            var newProjectile = Instantiate(projectile, transform.position, transform.rotation);
+            newProjectile.Init(Damage, Speed, transform.position);
             timer = 0f;
         }
     }
